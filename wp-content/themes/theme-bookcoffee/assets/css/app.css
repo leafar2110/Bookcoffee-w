@@ -1,0 +1,628 @@
+body{
+	font-family: "Lato", Arial, sans-serif;
+	color: #777;
+}
+
+.titulo-app span{
+	border-bottom: 3px solid white;
+}
+strong{
+	    font-size: 80px;
+}
+article img{
+	width: 275px;
+	margin-left: -15px;
+	height:200px;
+}
+.contenedor{
+	border: 1px solid #ccc;
+	margin: 20px 8px;
+}
+
+
+.video_background { 
+	position: absolute; 
+	bottom: 0px; 
+	right: 0px; 
+	min-width: 100%; 
+	min-height: 100%; 
+	width: auto; 
+	height: auto; 
+	z-index: -1000; 
+	overflow: hidden; 
+}
+.video_pattern { 
+	background:#fff; 
+	position: fixed; 
+	opacity: 0.8; 
+	left: 0px; 
+	top: 0px; 
+	width: 100%; 
+	height: 100%; 
+	z-index: 2; 
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.logotipo-app{
+	margin-top: 10px;
+}
+.titulo-portada{
+	margin-top: 150px;	
+}  
+.titulo-portada-1{
+	color: white;
+	height: 200px;
+	width: 700px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.titulo-portada-1 h1{
+	font-size: 59px;
+	margin: auto;
+}
+.titulo-portada-1 h1, legend{
+	font-family: "Kaushan Script", cursive !important;
+}
+
+ 
+ .bottom-app{
+ 	margin-top: 10px;
+ 	color: white;
+ 	background-color: #FBB448;
+ 	border-radius: 4px;
+ 	padding: 9px;
+ 	border: none;
+
+ }
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.nav-app ul li a{
+	color: white !important;
+}
+
+.nav-app{
+	background-color: rgba(0,0,0,0.6);
+
+}
+.nav-app span{
+	border: 2px solid white;
+	font-weight: 899;
+	padding: 8px 18px;
+	border-radius: 3px;
+}
+.nav-app span:hover{
+	background-color: white;
+	color: #FBB448;
+	transition-duration: .3s;
+} 
+
+.navbar ul li.active > a {
+    color: #FBB448 !important;
+}
+.icon-menu{
+	color: white;
+	font-size: 30px;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.portada{
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.reserva{
+	border-top: 8px solid  #FBB448;
+	padding: 29px;
+	color: white;
+	height: 411px;
+	background-color: rgba(0,0,0,0.6);
+	display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 60px;
+
+}
+
+.form-reserva{
+	background-color: rgba(0,0,0,0.5);
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+.platillos{
+	text-align: center;
+	margin: 100px 1px;
+}
+.platillos h1{
+	font-family: "Kaushan Script", cursive !important;
+	font-size: 50px;
+	color: #FBB448;
+	margin-bottom: 27px;
+}
+
+.platillos p{
+	font-size: 20px;
+   	line-height: 1.5;
+   	color: gray;
+}
+.separador h3{
+	font-family: "Kaushan Script", cursive !important;
+	font-size: 30px;
+	color: #FBB448;
+}
+.separador h4{
+	color: #FBB448 !important;
+	position: relative;
+	z-index: 1;
+	
+}
+.img-app{
+	position: relative;
+    z-index: -1;
+}
+.separador:before{
+	content: "";
+	position: absolute;
+    top: 219px;
+    right: 0;
+    left: 0;
+    width: 95%;
+    margin-left: 15px;
+        height: 200px;
+    z-index: -1;
+    background: white;
+    transform: rotate(4deg) skew(4deg);
+}
+.titulo-menu{
+	margin: auto;
+
+}
+.articulo-app h1{
+	font-size: 30px;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.background-app{
+	height: 94vh;
+}
+
+.service{
+	 padding: 90px 0;
+	color: white;
+	text-align: center;
+	background-color: #FBB448; 
+}
+.service h1{
+	font-family: "Kaushan Script", cursive !important;
+	font-size: 50px;
+}
+.titulo-service h4{
+	font-size: 18px
+}
+.titulo-service{
+	padding-bottom: 90px;
+}
+
+.div-service{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+#gtco-features{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+#gtco-features p,h3{
+	    margin-top: 35px;
+}
+.feature-center .icon i {
+    color: #fff;
+    font-size: 40px;
+    font-style: normal;
+}
+.feature-center .icon {
+    padding: 40px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: #FBB448;
+    border-radius: 50%;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.publi{
+	background-color: #4a3e35;
+	height: 88vh; 
+	color: white;
+	display: flex;
+    justify-content: center;
+    align-items: center
+}
+.publi p{
+	font-size: 20px;
+	font-weight: 300;
+}
+.anuncio{
+	width: 900px;
+
+	
+}
+.anuncio h1{
+	font-size: 55px;
+	font-weight: 100;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.estadisticas{
+	 padding: 100px 0;
+	color: gray;
+}
+.estadi-app{
+	    padding-bottom: 100px;
+	font-family: "Lato", Arial, sans-serif;
+	font-size: 19px;
+}
+.estadisticas h1{
+	font-family: "Kaushan Script", cursive !important;
+	color: #FBB448;
+	font-size: 50px;
+}
+.estadisticas h2{
+	color: #FBB448;
+	font-size: 48px;
+	font-weight: 100;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.suscribete{
+	height: 445px;
+	background-color: #0098EF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+.suscribe-app{
+	width: 921pxpu;
+	padding: 11px;
+}
+.suscribir{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.suscribir input{
+	margin: 19px;
+	width: 480px;
+	height: 46px;
+	border-radius: 7px;
+
+}
+
+
+.suscribete h1{
+	font-family: "Kaushan Script", cursive !important;
+	color: white;
+	font-size: 50px;
+}
+.suscribete h4{
+	color: rgba(255, 255, 255, 0.4) !important;
+	padding: 23px 0px;
+	font-size: 18px;
+
+}
+.suscrip{
+	background: transparent;
+	color: #fff;
+	border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+.suscrip::placeholder{
+	color: white !important;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.footer-app{
+	background-color: #151411;
+	color: white;
+
+}
+
+.cont-footer{
+	padding: 90px;
+
+}
+.social{
+	border-bottom: 1px solid #ccc;
+}
+.social h3{
+	font-size: 18px !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.contacts{
+	font-size: 18px;
+}
+.contacts i{
+	padding-left: 31px;
+}
+.contacts ul{
+	    margin-left: -60px;
+}
+.contacts ul li{
+	text-decoration: none;
+	display: inline-block;
+}
+.social .contacts span{
+	    margin-left: 10px;
+}
+.iconos-app{
+	padding-left: 27px;
+	font-size: 21px;
+}
+.copy-app p{
+	padding-top:  54px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-app a{
+
+	color:  #FBB448 !important;
+
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*FOOTER*/
+
+#gtco-footer .gtco-widget .gtco-quick-contact {
+    padding: 0;
+    margin: 0;
+    }
+.contact h1{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-size: 65px;
+ 	color: #383838;
+}
+.contact h3{
+	font-size: 25px;
+	font-weight: 100;
+	text-align: center;
+	color: #3838386b;
+	margin-top: -60px;
+	margin-bottom: 20px;
+}
+
+#name, #email{
+	height: 50px;
+	margin-right: 4px;
+	margin-bottom: 11px;
+	width: 500px;
+	padding-left: 17px;
+	font-size: 18px;
+	border-radius: 2px;
+	box-shadow: none;
+	background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-contact{
+	display: flex;
+   	justify-content: space-around;
+    padding:  100px 0;
+}
+
+
+textarea{
+	width: 502px;
+	padding-left: 17px;
+	font-size: 18px;
+	box-shadow: none;
+	background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+ .formulario .button{
+ 	border: none;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 8px 15px 8px 15px;
+    color: white;
+    background: #FBB448;
+    width: 170px;
+	}
+
+.info a{
+		
+	text-decoration: none;
+	color: #FBB448;;
+}
+
+
+
+.ir-arriba {
+	border-radius: 4px;
+display:none;
+	padding: 12px 17px;
+background-color: rgba(0,0,0,0.5);
+font-size:20px;
+cursor:pointer;
+position: fixed;
+bottom:20px;
+right:20px;
+}
+
+.ir-arriba a{
+color: white;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media (min-width: 0px) and (max-width: 425px){
+	.titulo-portada {
+    height: 220px;
+    text-align: center;
+	}
+	.titulo-portada h1 strong{
+		font-size: 30px;
+	}
+	.titulo-portada-1 h1{
+		font-size: 30px;
+		margin: auto;
+}
+	.titulo-portada-1{
+		height: 60px;
+	}
+
+	.reserva{
+		padding: 30px 45px;
+		    margin-top: 0px;
+	}
+
+	.estadisticas h2{
+		    padding: 40px 0 0 0;
+	}
+	.estadi-app{
+		padding-bottom: 0px;
+	}
+
+	.feature-center{
+		padding: 40px 0 0 0;
+		margin-bottom: 40px;
+	}
+	.anuncio h1{
+		font-size: 30px;
+		padding: 0 20px;
+	}
+
+	.contacts i {
+    padding-left: 20px;
+    }
+
+    .contacts{
+    font-size: 18px;
+    margin-left: -20px;
+    }
+    strong {
+     	font-size: 50px;
+
+}
+
+	textarea{
+		    width: 100%;
+	}
+
+
+	#name, #email{
+		    width: 100%;
+	}
+
+	.num-app{
+		width: 100%;
+		margin: auto;
+	}
+
+	.platillos h1{
+		font-size: 40px; 
+	}
+
+	.separador:before{
+	content: "";
+	position: absolute;
+    top: 159px;
+    right: 0;
+    left: 0;
+    width: 95%;
+    margin-left: 15px;
+    height: 200px;
+    z-index: -1;
+    background: white;
+    transform: rotate(4deg) skew(4deg);
+}
+.form-contact{
+	margin: auto;
+}
+
+.contact h2{
+	font-size: 24px;
+}
+.info h2{
+	margin-top: 31px;
+	font-size: 24px;
+}
+
+.cont-footer {
+    padding: 25px;
+}
+.li-contact{
+	display: block;
+}
+/*.nav-logo{
+	width: 170px;
+}
+*/
+
+.platillos p {
+    font-size: 18px;
+    padding: 0px 20px;
+    }
+
+   .titulo-service h4,p{
+   	padding: 0 20px;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 426px) and (max-width: 1024px){
+	.video_background{
+		height: 149vh;
+	}
+	.titulo-portada h1{
+		font-size: 20px;
+		margin: auto;
+}	
+.titulo-portada-1{
+		height: 149px;
+	}
+	.titulo-portada-1 h1{
+		    text-align: center;
+		    font-size: 49px;
+	}
+
+	.reserva{
+		margin-top: 35px;
+		height: 400px;
+	}
+	.nav-app{
+		    height: 60px;
+	}
+
+	.reserva legend{
+		text-align: center;
+	}
+
+
+}
+
