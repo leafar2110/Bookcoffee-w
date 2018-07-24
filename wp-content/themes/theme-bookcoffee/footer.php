@@ -31,11 +31,7 @@
 	</div>
 
 	</div>
-	<!-- código HTMl botón subir (top)-->
-<a href="#" id="js_up" class="ir-arriba">
-<!-- link del icono http://fontawesome.io/icon/rocket/ -->
-<i class="fa fa-rocket" aria-hidden="true"></i>
-</a>
+	
 </footer>
 <!-- FOOTER-->
 
