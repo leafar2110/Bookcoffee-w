@@ -104,16 +104,27 @@ article img{
 .navbar ul li.active > a {
     color: #FBB448 !important;
 }
-.icon-menu{
+.icom{
 	color: white;
-	font-size: 30px;
+	font-size: 30px !important;
 }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .portada{
 	display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+
+
+.portada-1 {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+ }
+
+ .portada-description{
+	margin-bottom: 250px;
+ }
 
 
 .reserva{
@@ -148,6 +159,9 @@ article img{
 	font-size: 20px;
    	line-height: 1.5;
    	color: gray;
+}
+.platillos .container a{
+		text-decoration-line: none;
 }
 .separador h3{
 	font-family: "Kaushan Script", cursive !important;
@@ -473,7 +487,7 @@ color: white;
 @media (min-width: 0px) and (max-width: 425px){
 	.background-app{
 		background-image: url(../img/comida.jpg);
-		height: 100vh;
+		background-size: cover;
 	}
 	.titulo-portada {
     height: 220px;
