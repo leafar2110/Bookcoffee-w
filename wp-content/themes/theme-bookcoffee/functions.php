@@ -15,3 +15,5 @@ function adp_load_styles_scripts() {
 
 }
 add_action('wp_enqueue_scripts', 'adp_load_styles_scripts');
+add_theme_support( 'post-thumbnails' );
+?>

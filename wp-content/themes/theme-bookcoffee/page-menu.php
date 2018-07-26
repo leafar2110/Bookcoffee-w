@@ -9,7 +9,7 @@
 <!--  PORTADA /-->
 
 <!--  PLATOS-->
-<?php get_template_part('/parciales/populardishes')?>
+<?php get_template_part('/parciales/dishes')?>
 <!--  PLATOS-->
 
 <!--  SERVICIOS-->

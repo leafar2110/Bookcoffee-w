@@ -240,7 +240,7 @@ article img{
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-.publi{
+.publicidad{
 	background-color: #4a3e35;
 	height: 88vh; 
 	color: white;
@@ -248,7 +248,7 @@ article img{
     justify-content: center;
     align-items: center
 }
-.publi p{
+.publicidad p{
 	font-size: 20px;
 	font-weight: 300;
 }

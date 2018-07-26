@@ -12,14 +12,7 @@
 		<div class=" form-contact row container">
 			
 		<div class="formulario col-lg-4 col-md-4 col-sm-6 wow animate-box fadeInUp animated-fast" data-animate-effect="fadeIn" data-wow-duration="1s">
-			<form>
-				<h2>Get in touch!</h2>
-				<input type="text" name="nombre" id="name" placeholder="Name" required>
-				<input type="email" name="email" id="email" placeholder="E-mail" required>
-				<textarea name="comentario" id="comentario" rows="7" placeholder="Message"></textarea>
-				<input type="submit" value="Send a Message" class="button">
-
-			</form>
+<?php echo do_shortcode('[contact-form-7 id="40" title="Contact form 1"]'); ?>
 		</div>
 
 		<div class="info contact col-lg-4 col-md-4 col-sm-6 wow animate-box fadeInUp animated-fast" data-animate-effect="fadeIn" data-wow-duration="1.4s">
