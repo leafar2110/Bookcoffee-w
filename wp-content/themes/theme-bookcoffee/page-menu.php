@@ -13,7 +13,7 @@
 <!--  PLATOS-->
 
 <!--  SERVICIOS-->
-<?php get_template_part('/parciales/service')?>
+<?php get_template_part('/parciales/servicesfav')?>
 <!--  SERVICIOS-->
 
 <!--  publicidad-->
