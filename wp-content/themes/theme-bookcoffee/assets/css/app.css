@@ -469,18 +469,18 @@ textarea{
 
 .ir-arriba {
 	border-radius: 4px;
-display:none;
+	display:none;
 	padding: 12px 17px;
-background-color: rgba(0,0,0,0.5);
-font-size:20px;
-cursor:pointer;
-position: fixed;
-bottom:20px;
-right:20px;
+	background-color: rgba(0,0,0,0.5);
+	font-size:20px;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
 }
 
 .ir-arriba a{
-color: white;
+	color: white;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
