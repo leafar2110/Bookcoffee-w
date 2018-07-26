@@ -161,7 +161,7 @@ article img{
    	color: gray;
 }
 .platillos .container a{
-		text-decoration-line: none;
+	text-decoration-line: none;
 }
 .separador h3{
 	font-family: "Kaushan Script", cursive !important;
@@ -198,6 +198,15 @@ article img{
 .articulo-app h1{
 	font-size: 30px;
 }
+.contenedor:hover{
+	transform: translateY(-12px);
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.28);
+	transition: 0.3s;
+}
+.separador:before:hover{ 
+	transform: translateY(-12px);
+}
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .background-app{
 	height: 94vh;
@@ -564,7 +573,7 @@ textarea{
     left: 0;
     width: 95%;
     margin-left: 15px;
-    height: 200px;
+    height: 100px;
     z-index: -1;
     background: white;
     transform: rotate(4deg) skew(4deg);

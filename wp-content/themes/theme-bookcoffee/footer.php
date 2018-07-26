@@ -39,7 +39,7 @@
 
 <!-- script para que funcione al 100% el botón ir arriba -->
 <div class="ir-arriba">
-		<a href="#" class="js-gotop"><i class="fa fa-rocket"></i></a>
+		<a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
 	</div>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
