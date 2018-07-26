@@ -190,8 +190,8 @@ article img{
 .contenedor:hover{
 	transform: translateY(-12px)
 			   translateX(-12px);
-	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.28);
-	transition: 0.3s;
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.18);
+	transition: 0.4s;
 }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .background-app{
