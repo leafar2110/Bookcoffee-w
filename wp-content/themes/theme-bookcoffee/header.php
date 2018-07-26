@@ -15,17 +15,11 @@
 <!--  PORTADA -->
 	<section class="background-app">
 		<header class="header">
-			<div>
-		  	<video autoplay="autoplay" loop="loop" id="video_background" height="51vh" class="video_background" preload="auto" volume="0"/>
-      		<source src="<?php echo get_template_directory_uri();?>/assets/video/background.mp4" type="video/mp4" />	
-			</div>
-
-
-				<nav class="navbar navbar-expand-lg navbar-light nav-app">
-				 <div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light nav-app">
+				<div class="container">
 				  <a class="navbar-brand" href="<?php echo bloginfo('url').'/index.php'; ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/2.png" class="nav-logo img-fluid"></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <i class="icon-menu"></i>
+				    <i class="fa fa-bars icom"></i>
 				  </button>
 
 				  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -38,8 +32,9 @@
 					    </ul>
 				  </div>
 				</div>
-				</nav>
-			<div class="container">
+			</nav>
+		</header>
+		
 
 
 

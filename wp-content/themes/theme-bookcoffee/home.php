@@ -1,5 +1,10 @@
 <!--  PORTADA /-->
 <?php get_header();?>
+<div>
+		  	<video autoplay="autoplay" loop="loop" id="video_background" height="51vh" class="video_background" preload="auto" volume="0"/>
+      		<source src="<?php echo get_template_directory_uri();?>/assets/video/background.mp4" type="video/mp4" />	
+</div>
+<div class="container">
 <div class="portada row">
 				<div class="titulo-portada-1 wow fadeInUp col-md-6  col-sm-6">
 					<h1><span> Bookcoffee</span> Restaurant </h1>
