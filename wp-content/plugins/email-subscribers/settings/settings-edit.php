@@ -111,7 +111,6 @@ if ( ! class_exists( 'ES_Settings' ) ) {
 					</select>
 				</td>
 			</tr>
-			<?php do_action('es_after_optin_settings', $this->form); ?>
 			<tr class="es-admin active-settings">
 				<th scope="row">
 					<label for="elp"><?php echo __( 'Image Size', ES_TDOMAIN ); ?>
@@ -163,14 +162,14 @@ if ( ! class_exists( 'ES_Settings' ) ) {
 			<tr class="es-admin active-settings">
 				<th scope="row">
 					<label for="elp"><?php echo __( 'Sent Report Subject', ES_TDOMAIN ); ?>
-					<p class="description"><?php echo __( 'Subject for the email report which will be sent to admin.<br />(Will be sent only if sending email via immediately)', ES_TDOMAIN ); ?></p></label>
+					<p class="description"><?php echo __( 'Subject for the email report which will be sent to admin.', ES_TDOMAIN ); ?></p></label>
 				</th>
 				<td><input name="es_c_sentreport_subject" type="text" id="es_c_sentreport_subject" value="<?php echo esc_html(stripslashes($this->form['ig_es_sentreport_subject'])); ?>" size="60" maxlength="225" /></td>
 			</tr>
 			<tr class="es-admin active-settings">
 				<th scope="row">
 					<label for="elp"><?php echo __( 'Sent Report Content', ES_TDOMAIN ); ?>
-					<p class="description"><?php echo __( 'Content for the email report which will be sent to admin.<br />Available Keywords: {{COUNT}}, {{UNIQUE}}, {{STARTTIME}}, {{ENDTIME}}<br />(Will be sent only if sending email via immediately)', ES_TDOMAIN ); ?></p></label>
+					<p class="description"><?php echo __( 'Content for the email report which will be sent to admin.<br />Available Keywords: {{COUNT}}, {{UNIQUE}}, {{STARTTIME}}, {{ENDTIME}}', ES_TDOMAIN ); ?></p></label>
 				</th>
 				<td><textarea size="100" id="es_c_sentreport" rows="8" cols="58" name="es_c_sentreport"><?php echo esc_html(stripslashes($this->form['ig_es_sentreport'])); ?></textarea></td>
 			</tr>
@@ -200,7 +199,6 @@ if ( ! class_exists( 'ES_Settings' ) ) {
 				</th>
 				<td><input name="es_c_optinlink" type="text" id="es_c_optinlink" value="<?php echo esc_html(stripslashes($this->form['ig_es_optinlink'])); ?>" size="60" maxlength="225" readonly /></td>
 			</tr>
-			<?php ob_start(); ?>
 			<tr class="es-signup-confirmation hidden">
 				<th scope="row">
 					<label for="elp"><?php echo __( 'Text to display after an email address is successfully subscribed from Double Opt-In (Confirmation) Email', ES_TDOMAIN ); ?>
@@ -208,11 +206,6 @@ if ( ! class_exists( 'ES_Settings' ) ) {
 				</th>
 				<td><textarea size="100" id="es_c_subhtml" rows="4" cols="58" name="es_c_subhtml"><?php echo esc_html(stripslashes($this->form['ig_es_successmsg'])); ?></textarea></td>
 			</tr>
-			<?php $es_optin_settings = ob_get_clean(); 
-				  $es_type = 'es_optin';
-				  $es_optin_settings = apply_filters('es_optin_settings', $es_optin_settings, $es_type);
-				  echo $es_optin_settings;
-			?>
 			<!-------------------------------------------------------------------------------->
 			<tr class="es-signup-confirmation hidden">
 				<th scope="row">
@@ -256,7 +249,6 @@ if ( ! class_exists( 'ES_Settings' ) ) {
 				</th>
 				<td><textarea size="100" id="es_c_unsubtext" rows="4" cols="58" name="es_c_unsubtext"><?php echo esc_html(stripslashes($this->form['ig_es_unsubcontent'])); ?></textarea></td>
 			</tr>
-			<?php ob_start(); ?>
 			<tr class="es-signup-confirmation hidden">
 				<th scope="row">
 					<label for="elp"><?php echo __( 'Text to display after an email address is unsubscribed', ES_TDOMAIN ); ?>
@@ -264,11 +256,6 @@ if ( ! class_exists( 'ES_Settings' ) ) {
 				</th>
 				<td><textarea size="100" id="es_c_unsubhtml" rows="4" cols="58" name="es_c_unsubhtml"><?php echo esc_html(stripslashes($this->form['ig_es_unsubtext'])); ?></textarea></td>
 			</tr>
-			<?php $es_optin_settings = ob_get_clean(); 
-			      $es_type = 'es_unsubscribe';
-				  $es_optin_settings = apply_filters('es_optin_settings', $es_optin_settings, $es_type);
-				  echo $es_optin_settings;
-			?>
 			<!-------------------------------------------------------------------------------->
 			<tr class="es-signup-confirmation hidden">
 				<th scope="row">
@@ -371,7 +358,6 @@ if ( ! class_exists( 'ES_Settings' ) ) {
 					<input type="text" name="es_cron_url" id="es_cron_url" value="<?php echo $this->form['ig_es_cronurl']; ?>" size="68" readonly />
 				</td>
 			</tr>
-			<?php do_action('es_after_cron_url', $this->form); ?>
 			<tr class="es-cron hidden">
 				<th scope="row">
 					<label for="tag-image"><?php echo __( 'Email Count', ES_TDOMAIN ); ?>
@@ -390,7 +376,6 @@ if ( ! class_exists( 'ES_Settings' ) ) {
 					</label>
 				</th>
 				<td>
-					<label><input type="checkbox" name="ig_es_enable_cron_adminmail" value="yes" <?php ( !empty( $this->form['ig_es_enable_cron_adminmail'] ) ) ? checked( $this->form['ig_es_enable_cron_adminmail'], 'yes' ) : ''; ?>/><?php echo __( 'Enabling this will send a cron report email on every successfully cron hit', ES_TDOMAIN ); ?></label><br/><br/>
 					<textarea size="100" id="es_cron_adminmail" rows="7" cols="72" name="es_cron_adminmail"><?php echo esc_html(stripslashes($this->form['ig_es_cron_adminmail'])); ?></textarea>
 				</td>
 			</tr>
@@ -506,7 +491,6 @@ if ( ! class_exists( 'ES_Settings' ) ) {
 				$es_cron_adminmail = get_option('ig_es_cron_adminmail');
 			}
 			$form['ig_es_cron_adminmail'] = $es_cron_adminmail;
-			$form['ig_es_enable_cron_adminmail'] = get_option('ig_es_enable_cron_adminmail', 'yes');
 
 			// Form submitted, check & update the data in options table
 			if (isset($_POST['es_form_submit']) && $_POST['es_form_submit'] == 'yes') {
@@ -566,20 +550,18 @@ if ( ! class_exists( 'ES_Settings' ) ) {
 				// Fetch submitted Cron Data
 				$es_cron_mailcount = isset($_POST['es_cron_mailcount']) ? $_POST['es_cron_mailcount'] : '';
 				if( $es_cron_mailcount == "0" && strlen ($es_cron_mailcount) > 0  ) {
-					$es_errors[] = __('Please enter valid email count.', ES_TDOMAIN);
+					$es_errors[] = __('Please enter valid mail count.', 'email-subscribers');
 					$es_error_found = TRUE;
 				} else {
 					$form['ig_es_cron_mailcount'] = $es_cron_mailcount;
 				}
 
 				$form['ig_es_cron_adminmail'] = isset($_POST['es_cron_adminmail']) ? $_POST['es_cron_adminmail'] : '';
-				$ig_es_enable_cron_adminmail = (!empty($_POST['ig_es_enable_cron_adminmail']) && $_POST['ig_es_enable_cron_adminmail'] === 'yes') ? 'yes' : 'no';
-				$form['ig_es_enable_cron_adminmail'] = $ig_es_enable_cron_adminmail;
-				// No errors found, we can add the settings to the options
+
+				//	No errors found, we can add the settings to tehe options
 				if ($es_error_found == FALSE) {
 					$action = "";
 					$action = $this->es_settings_update( $form, $roles );
-					do_action('es_before_settings_update', $form);
 					if($action == "sus") {
 						$es_success = __( 'Settings Saved.', ES_TDOMAIN );
 					} else {

@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	}
 
 	$es_c_emailsubscribers = get_option( 'ig_es_sync_wp_users', 'norecord' );
-	if( $es_c_emailsubscribers != 'norecord' && $es_c_emailsubscribers != "" && !is_numeric( $es_c_emailsubscribers ) ) {
+	if($es_c_emailsubscribers != 'norecord' && $es_c_emailsubscribers != "") {
 
 		$es_sync_unserialized_data = maybe_unserialize($es_c_emailsubscribers);
 		$es_registered = $es_sync_unserialized_data['es_registered'];

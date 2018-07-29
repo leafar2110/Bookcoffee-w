@@ -34,14 +34,11 @@ $cnt_inactive_subscribers = es_cls_dbquery::es_inactive_subscribers();
 
 // WordPress Registered Users
 $cnt_users = 0;
-$get_wp_registered_users = $wpdb->prepare( "SELECT count(DISTINCT user_email) FROM {$wpdb->prefix}users WHERE 1=%d", 1 );
-$cnt_users = $wpdb->get_var( $get_wp_registered_users );
+$cnt_users = $wpdb->get_var( "SELECT count(DISTINCT user_email) FROM ". $wpdb->prefix . "users" );
 
 // Users who comments on blog posts
 $cnt_comment_author = 0;
-$wp_comment_author_email = '';
-$get_wp_commented_users_on_blog = $wpdb->prepare( "SELECT count(DISTINCT comment_author_email) FROM {$wpdb->prefix}comments WHERE comment_author_email != %s", $wp_comment_author_email );
-$cnt_comment_author = $wpdb->get_var( $get_wp_commented_users_on_blog );
+$cnt_comment_author = $wpdb->get_var( "SELECT count(DISTINCT comment_author_email) FROM ". $wpdb->prefix . "comments WHERE comment_author_email != ''" );
 
 ?>
 

@@ -17,18 +17,18 @@ var ES = function() {}
 ES.prototype = {
 
 	init : function(form){
-		jQuery(form).bindFirst('submit', function(e) {
-			window.es.addSubscriber(e, jQuery(e.target));
+		jQuery(form).bindFirst('submit', function(e){
+			window.ES.addSubscriber(e, jQuery(e.target));
 		}); // submit Event
 	},
 
-	addSubscriber : function(e, form) {
+	addSubscriber : function(e, form){
 		var form = form || undefined;
 		e.preventDefault();
 		if(typeof(form) !== 'undefined'){
 			var fm_parent = form.closest('.es_shortcode_form');
 			var formData = {};
-			var formData = window.es.prepareFormData(e, form, formData);
+			var formData = window.ES.prepareFormData(e, form, formData);
 			formData['es'] = 'subscribe';
 			formData['action'] = 'es_add_subscriber';
 			var action_url = es_widget_page_notices.es_ajax_url;
@@ -57,19 +57,7 @@ ES.prototype = {
 						es_msg_text = es_widget_page_notices.es_success_message;
 						jQuery(form)[0].reset();
 					}
-					var esSuccessEvent = { 
-											detail: { 
-														es_response : "error", 
-														msg: '' 
-													}, 
-											bubbles: true, 
-											cancelable: true 
-										} ;
-
-					esSuccessEvent.detail.es_response = 'success';
-					esSuccessEvent.detail.msg = es_msg_text;
 					jQuery(form).find('.es_msg span').text(es_msg_text).show();
-					jQuery(form).trigger('es_response', [ esSuccessEvent ]);
 				},
 				error: function(err) {
 					console.log(err, 'error');
@@ -87,25 +75,19 @@ ES.prototype = {
 
 };
 
-if(typeof window.es === 'undefined') {
-	window.es = new ES();
-}
-
-jQuery(document).ready(function() {
+jQuery(document).ready(function(){
 	// TODO :: check this later incase of undefined
+	window.ES = new ES();
 	jQuery('.es_shortcode_form').each(function(i, v){
-		window.es.init(v);
-	});
-	jQuery('.es_widget_form').each(function(i, v){
-		window.es.init(v);
+		window.ES.init(v);
 	});
 });
 
 // Compatibility of ES with IG
 jQuery( window ).on( "init.icegram", function(e, ig) {
-	if(typeof ig !== 'undefined' && typeof ig.messages !== 'undefined' ) {
+	if(typeof ig !== 'undefined' && typeof ig.messages !== 'undefined' ){
 		jQuery('.es_shortcode_form').each(function(i, v){
-			window.es.init(v);
+			window.ES.init(v);
 		});
 	}
 });

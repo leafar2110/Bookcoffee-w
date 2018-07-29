@@ -88,8 +88,4 @@ class es_cls_intermediate {
 	public static function es_information() {
 		require_once(ES_DIR.'help'.DIRECTORY_SEPARATOR.'help.php');
 	}
-
-	public static function es_pricing() {
-		require_once(ES_DIR.'pricing'.DIRECTORY_SEPARATOR.'pricing.php');
-	}
 }

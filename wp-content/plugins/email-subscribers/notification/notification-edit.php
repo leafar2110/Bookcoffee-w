@@ -113,7 +113,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<style>
 		.form-table th {
-			width: 400px;
+			width: 250px;
 		}
 	</style>
 
@@ -129,7 +129,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<tbody>
 						<tr>
 							<th scope="row">
-								<label for="tag-link"><?php echo __( 'Subscribers Group to send post notification to', ES_TDOMAIN ); ?></label>
+								<label for="tag-link"><?php echo __( 'Update Subscribers Group', ES_TDOMAIN ); ?></label>
 							</th>
 							<td>
 								<select name="es_note_group" id="es_note_group">
@@ -281,7 +281,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 									<option value='Cron' <?php if($form['es_note_status']=='Cron') { echo 'selected="selected"' ; } ?>><?php echo __( 'Add to cron and send email via cron job', ES_TDOMAIN ); ?></option>
 									<option value='Disable' <?php if($form['es_note_status']=='Disable') { echo 'selected="selected"' ; } ?>><?php echo __( 'Disable email notification', ES_TDOMAIN ); ?></option>
 								</select>
-								<?php do_action('es_after_email_sent_option'); ?>
 							</td>
 						</tr>
 					</tbody>

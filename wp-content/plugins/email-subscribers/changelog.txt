@@ -4,34 +4,6 @@ Author		: Icegram
 Author URI	: https://www.icegram.com/
 License		: GPLv3
 
-***********************************************************Version 3.5.4************************************************************
-
-* New: Added option to disable cron email sent to Admin
-* Fix: 'Optimize Table & Delete Records' button not deleting any reports
-* Fix: 'In Queue' notice showing multiple times on Reports tab
-* Update: Sent Report email will be now sent only if sending email immediately
-* Update: POT file
-* Localization: Made all translation files up-to-date with latest POT file
-
-***********************************************************Version 3.5.3************************************************************
-
-* Fix: Notices on Subscribers -> Sync page (Illegal string offset ‘es_registered’ & ‘es_registered_group’)
-* Update: Use of $wpdb->prepare for direct queries to the database
-* Update: Text improvements while creating/editing post notification
-* Update: POT file
-* Localization: Translation for Swedish (sv_SE) language updated (Thanks to Rune Svennelid)
-* Localization: Made all translation files up-to-date with latest POT file
-
-***********************************************************Version 3.5.2************************************************************
-
-* Update: Show list of available keywords based on template type while editing a template
-* Update: Increased 'maxlength' for name and email field in the subscription form
-* Update: Single subscription form for widget, shortcode and php code
-* Update: Added text domain for missing texts
-* Update: POT file
-* Localization: Translation for Polish (pl_PL) language updated (Thanks to Witold)
-* Localization: Translation for German Deutsch (de_DE) language updated (Thanks to Zero & Markus Buschmann)
-* Localization: Made all translation files up-to-date with latest POT file
 
 ***********************************************************Version 3.5.1************************************************************
 

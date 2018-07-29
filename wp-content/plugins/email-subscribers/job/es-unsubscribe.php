@@ -6,8 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if( (isset($_GET['es'])) && ($_GET['es'] == "unsubscribe") ) {
-	$es_page_request = $_GET['es'];
-	
+
 	$blogname = get_option('blogname');
 	$noerror = true;
 	$home_url = home_url('/');
@@ -63,7 +62,6 @@ if( (isset($_GET['es'])) && ($_GET['es'] == "unsubscribe") ) {
 				}
 				echo $message;
 			}
-			do_action('es_redirect_to_optin_page', $es_page_request);
 			?>
 		</div>
 	</body>
