@@ -539,12 +539,12 @@ textarea{
 }
 
 	textarea{
-		    width: 100%;
+		width: 100%;
 	}
 
 
 	#name, #email{
-		    width: 100%;
+	    width: 100%;
 	}
 
 	.num-app{
@@ -556,7 +556,7 @@ textarea{
 		font-size: 40px; 
 	}
 
-.form-contact{
+   .form-contact{
 	margin: auto;
 }
 
@@ -590,15 +590,9 @@ textarea{
 
 }
 
-@media (min-width: 480px) and (max-width: 768px){
 
-	.portada{
-		display:flex;
-		justify-content: normal;
-	}	
-}
 
-@media (min-width: 426px) and (max-width: 1024px){
+@media (min-width: 426px) and (max-width: 768px){
 	.video_background{
 		height: 149vh;
 	}
@@ -606,29 +600,61 @@ textarea{
 		font-size: 20px;
 		margin: auto;
 }	
-.titulo-portada-1{
+	.titulo-portada-1{
 		height: 149px;
 	}
 	.titulo-portada-1 h1{
-		    text-align: center;
-		    font-size: 49px;
+		text-align: center;
+	    font-size: 49px;
+	}
+	.titulo-portada {
+		margin-top: 100px;
 	}
 	.portada{
 		display:flex;
+		justify-content: center;
 	}
 	.reserva{
-	margin-top: 0px;
-    height: 370px;
-    width: 300px;
+ 		margin-top: 0px;
+		 height: 350px;
+    	width: 270px;
 	}
-	.nav-app{
-		    height: 60px;
-	}
-
+	
 	.reserva legend{
 		text-align: center;
 	}
 
 
 }
-
+@media (min-width: 769px) and (max-width: 1024px){
+	.video_background{
+		height: 149vh;
+	}
+	.titulo-portada h1{
+		font-size: 20px;
+		margin: auto;
+}	
+	.titulo-portada-1{
+		height: 149px;
+	}
+	.titulo-portada-1 h1{
+		text-align: center;
+	    font-size: 49px;
+	}
+	.titulo-portada {
+		margin-top: 100px;
+	}
+	.portada{
+		display:flex;
+		justify-content: center;
+	}
+	.reserva{
+ 		margin-top: 0px;
+		 height: 350px;
+    	width: 270px;
+	}
+	
+	.reserva legend{
+		text-align: center;
+	}
+}

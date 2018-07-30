@@ -6,10 +6,10 @@
 </div>
 <div class="container">
 <div class="portada row">
-				<div class="titulo-portada-1 wow fadeInUp col-md-6 col-sm-4">
+				<div class="titulo-portada-1 wow fadeInUp col-md-6 col-sm-6">
 					<h1><span> Bookcoffee</span> Restaurant </h1>
 			  </div>
-			  <div class="col-sm-8 col-md-4">
+			  <div class="col-sm-6 col-md-4">
 			  	<form class="reserva wow fadeInRightBig">
 			  		<legend>Table reservation</legend>
 			  		<label>Personas</label>

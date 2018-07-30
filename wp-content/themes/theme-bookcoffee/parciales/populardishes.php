@@ -7,7 +7,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6">
 				  <a href=" <?php echo bloginfo('url').'/index.php/description'; ?>">
 					<div class="contenedor" >
 						<div class="article-app item e1">
@@ -22,7 +22,7 @@
 				  </a>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6">
 				  <a href=" <?php echo bloginfo('url').'/index.php/description'; ?>">
 					<div class="contenedor" >
 						<div class="article-app item e1">
@@ -36,7 +36,7 @@
 					</div>
 				  </a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6">
 				  <a href=" <?php echo bloginfo('url').'/index.php/description'; ?>">
 					<div class="contenedor" >
 						<div class="article-app item e1">
@@ -50,7 +50,7 @@
 					</div>
 				  </a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6">
 				  <a href=" <?php echo bloginfo('url').'/index.php/description'; ?>">
 					<div class="contenedor" >
 						<div class="article-app item e1">
@@ -64,7 +64,7 @@
 					</div>
 				  </a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6">
 				  <a href=" <?php echo bloginfo('url').'/index.php/description'; ?>">
 					<div class="contenedor" >
 						<div class="article-app item e1">
@@ -78,7 +78,7 @@
 					</div>
 				  </a>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6">
 				  <a href=" <?php echo bloginfo('url').'/index.php/description'; ?>">
 					<div class="contenedor" >
 						<div class="article-app item e1">
