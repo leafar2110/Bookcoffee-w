@@ -35,9 +35,9 @@
 				</div>
 			</nav>
 		</header>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content reserva">
+<div class="modal fade  justify-content-end container" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content reserva reserva-modal">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel"><legend>Table reservation</legend></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">

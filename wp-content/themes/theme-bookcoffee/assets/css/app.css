@@ -89,7 +89,7 @@ article img{
 
 }
 .nav-app span{
-
+	margin-top: -10px;
 } 
 .btn-primary {
 	background: transparent;
@@ -97,6 +97,7 @@ article img{
 	font-weight: 899;
 	padding: 8px 18px;
 	border-radius: 3px;
+	margin-top: -10px;
 }
 .btn-primary:hover {
     background-color: white;
@@ -112,6 +113,10 @@ article img{
 }
 .modal-footer {
 	border: none;
+}
+.modal-dialog{
+	float: right;
+	margin-top: 110px;
 }
 
 .close{
@@ -155,6 +160,9 @@ article img{
     flex-direction: column;
     margin-top: 60px;
 
+}
+.reserva-modal{
+	background-color: rgba(0,0,0,0.9);
 }
 .modal-content{
 	width: max-content;
@@ -504,6 +512,9 @@ textarea{
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media (min-width: 0px) and (max-width: 425px){
+	.modal-header{
+		border: none;
+	}
 	.background-app{
 		background-image: url(../img/comida.jpg);
 		background-size: cover;
@@ -526,6 +537,10 @@ textarea{
 	.reserva{
 		padding: 30px 45px;
 		    margin-top: 0px;
+	}
+
+	.reserva-modal{
+		padding: 33px 10px;
 	}
 
 	.estadisticas h2{
@@ -612,6 +627,10 @@ textarea{
 
 
 @media (min-width: 426px) and (max-width: 768px){
+	.modal-header{
+		border: none;
+		font-size: 14px;
+	}
 	.video_background{
 		height: 149vh;
 	}
@@ -646,6 +665,10 @@ textarea{
 
 }
 @media (min-width: 769px) and (max-width: 1024px){
+	.modal-header{
+		font-size: 14px;
+		border: none;
+	}
 	.video_background{
 		height: 149vh;
 	}
