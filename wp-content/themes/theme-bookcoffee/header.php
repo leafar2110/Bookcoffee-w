@@ -15,6 +15,7 @@
 <!--  PORTADA -->
 	<section class="background-app">
 		<header class="header">
+	
 			<nav class="navbar navbar-expand-lg navbar-light nav-app">
 				<div class="container">
 				  <a class="navbar-brand" href="<?php echo bloginfo('url').'/index.php'; ?>"><img src="<?php echo get_template_directory_uri();?>/assets/img/2.png" class="nav-logo img-fluid"></a>

@@ -30,9 +30,9 @@
 			<h2>Contact Information</h2>
 			<p>55 main St.toronto</p>
 			<p>1234 City Road, City name </p>
-			<p><a href="tel: +584126521149"><i class="icon-phone" ></i> <span> 0412-6521149 </span></a></p>
-      		<p><a href="mailto:invie@gmail.com"><i class="icon-mail2"> </i><span> invie@gmail.com</span></a></p>
-       		<p><a href="#"><i class="icon-chat"> </i><span> Live Chat</span></a></p>
+			<p><a href="tel: +584126521149"><i class="fa fa-phone" ></i> <span> 0412-6521149 </span></a></p>
+      		<p><a href="mailto:invie@gmail.com"><i class="fa fa-envelope"> </i><span> invie@gmail.com</span></a></p>
+       		<p><a href="#"><i class="fa fa-comments-o"> </i><span> Live Chat</span></a></p>
 			
 		</div>
 		</div>

@@ -21,7 +21,7 @@
 					</div>
 				  </a>
 				</div>
-
+				
 				<div class="col-md-4 col-sm-6">
 				  <a href=" <?php echo bloginfo('url').'/index.php/description'; ?>">
 					<div class="contenedor" >

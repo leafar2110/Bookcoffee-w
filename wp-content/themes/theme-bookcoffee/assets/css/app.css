@@ -171,12 +171,15 @@ article img{
 	font-family: "Kaushan Script", cursive !important;
 	font-size: 30px;
 	color: #FBB448;
+	padding-bottom: 20px;
+	margin-top: 1px;
 }
 
 .separador h4{
 	color: #FBB448 !important;
 	position: relative;
 	z-index: 1;
+	padding-top: 20px;
 	
 }
 .img-app{
