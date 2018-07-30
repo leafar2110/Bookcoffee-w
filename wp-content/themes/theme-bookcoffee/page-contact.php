@@ -15,7 +15,7 @@
 		
 		<div class=" form-contact row container">
 			
-		<div class="formulario col-lg-4 col-md-4 col-sm-6 wow animate-box fadeInUp animated-fast" data-animate-effect="fadeIn" data-wow-duration="1s">
+		<div class="formulario col-lg-6  col-md-6 col-sm-12 wow animate-box fadeInUp animated-fast" data-animate-effect="fadeIn" data-wow-duration="1s">
 			<form>
 				<h2>Get in touch!</h2>
 				<input type="text" name="nombre" id="name" placeholder="Name" required>
@@ -26,7 +26,7 @@
 			</form>
 		</div>
 
-		<div class="info contact col-lg-4 col-md-4 col-sm-6 wow animate-box fadeInUp animated-fast" data-animate-effect="fadeIn" data-wow-duration="1.4s">
+		<div class="info contact col-lg-4 col-md-4 col-sm-12 wow animate-box fadeInUp animated-fast" data-animate-effect="fadeIn" data-wow-duration="1.4s">
 			<h2>Contact Information</h2>
 			<p>55 main St.toronto</p>
 			<p>1234 City Road, City name </p>
