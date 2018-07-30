@@ -71,7 +71,6 @@ article img{
 
  
  .bottom-app{
- 	margin-top: 10px;
  	color: white;
  	background-color: #FBB448;
  	border-radius: 4px;
@@ -90,19 +89,33 @@ article img{
 
 }
 .nav-app span{
-	border: 2px solid white;
+
+} 
+.btn-primary {
+	background: transparent;
+	border: 2px solid white !important;
 	font-weight: 899;
 	padding: 8px 18px;
 	border-radius: 3px;
 }
-.nav-app span:hover{
-	background-color: white;
+.btn-primary:hover {
+    background-color: white;
 	color: #FBB448;
 	transition-duration: .3s;
-} 
+}
+.btn-primary:focus, .btn-primary.focus {
+	box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0); 
+}
 
 .navbar ul li.active > a {
     color: #FBB448 !important;
+}
+.modal-footer {
+	border: none;
+}
+
+.close{
+	color:white;
 }
 .icom{
 	color: white;
@@ -142,6 +155,9 @@ article img{
     flex-direction: column;
     margin-top: 60px;
 
+}
+.modal-content{
+	width: max-content;
 }
 
 .form-reserva{

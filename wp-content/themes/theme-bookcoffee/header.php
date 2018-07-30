@@ -29,12 +29,46 @@
 							<li class="nav-item"><a class="nav-link" href="<?php echo bloginfo('url').'/index.php/menu'; ?>">Menu</a></li>
 							<li class="nav-item"><a class="nav-link" href="<?php echo bloginfo('url').'/index.php/service'; ?>">Service</a></li>
 							<li class="nav-item"><a class="nav-link" href="<?php echo bloginfo('url').'/index.php/contact'; ?>">Contact</a></li>
-							<li class="nav-item"><a class="nav-link" href="#"><span>Reservation</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="#"><span><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Reservation</button></span></a></li>
 					    </ul>
 				  </div>
 				</div>
 			</nav>
 		</header>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content reserva">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><legend>Table reservation</legend></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <label>Personas</label>
+			  		<select type="text" class="form-control form-reserva personas" name="persona">
+			  			<option value="">Persons</option>
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5+</option>
+			  		</select> 
+			  		<label>Date</label>
+			  		<input type="date" class="form-control form-reserva" name="fecha">
+			  		<label>Time</label>
+			  		<input type="time" class="form-control form-reserva" name="hora">
+			  		
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class=" bottom-app">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
 		
 
 
