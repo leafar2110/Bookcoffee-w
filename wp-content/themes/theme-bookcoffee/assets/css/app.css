@@ -77,7 +77,6 @@ article img{
  	color: white;
  	background-color: #FBB448;
  	border-radius: 4px;
- 	padding: 9px;
  	border: none;
 
  }
@@ -317,26 +316,41 @@ article img{
 	
 	
 }
+.es_shortcode_form{
+	display: flex !important;
+	align-items: baseline;
+}
 
+.es_textbox {
+	padding-bottom: 0;
+}
 
+.es_button {
+	padding-top: 0;
+	padding-bottom: 0;
+}
 
 .suscribe-app{
-	width: 921pxpu;
+	
 	padding: 11px;
 }
 .suscribir{
+	align-items: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	width: 100%;
 	
 }
 
 .suscribir input{
-	margin: 19px;
-	width: 480px;
-	height: 46px;
 	border-radius: 7px;
+	margin: 19px;
+	height: 46px;
+	width: 100%;
+}
 
+.suscribir input[type="email"] {
+	padding-left: 10px;
 }
 
 

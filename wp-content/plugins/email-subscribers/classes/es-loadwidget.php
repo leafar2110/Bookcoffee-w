@@ -24,28 +24,24 @@ class es_cls_widget {
 			$active_plugins = array_merge($active_plugins, get_site_option('active_sitewide_plugins', array()));
 		}
 
-		$es .= '<div class="row suscribir">';
 		$es .= '<form class="es_shortcode_form" data-es_form_id="es_shortcode_form">';
+		$es .= '<div class="row suscribir">';
 
-		if( $es_desc != "" ) {
-			$es .= '<div class="es_caption">'.$es_desc.'</div>';
-		}
-		if( $es_name == "YES" ) {
-			$es .= '<div class="es_lablebox"><label class="es_shortcode_form_name">'.__( 'Name', ES_TDOMAIN ).'</label></div>';
-			$es .= '<div class="es_textbox">';
-				$es .= '<input type="text" id="es_txt_name_pg" class="es_textbox_class" name="es_txt_name_pg" value="" maxlength="40">';
-			$es .= '</div>';
-		}
+	
 		$es .= '<div class="es_lablebox"><label class="es_shortcode_form_email">'.__( '', ES_TDOMAIN ).'</label></div>';
-		$es .= '<div class="es_textbox">';
-			$es .= '<input type="email" id="es_txt_email_pg" class="es_textbox_class suscrip col-lg-4 col-md-4 col-sm-6 wow animate-box fadeInUp animated-fast" data-animate-effect="fadeIn" data-wow-duration="1.3s"  placeholder="Your Email" name="es_txt_email_pg" maxlength="40" required>';
+		$es .= '<div class="es_textbox col-md-6 col-lg-6 ">';
+			$es .= '<input type="email" id="es_txt_email_pg" class="es_textbox_class suscrip wow animate-box fadeInUp animated-fast" data-animate-effect="fadeIn" data-wow-duration="1.3s"  placeholder="Your Email" name="es_txt_email_pg" maxlength="40" required>';
 		$es .= '</div>';
 		if (( in_array('gdpr/gdpr.php', $active_plugins) || array_key_exists('gdpr/gdpr.php', $active_plugins) )) {
 			$es .= GDPR::get_consent_checkboxes();
 		}
-		$es .= '<div class="es_button">';
-			$es .= '<input type="submit" id="es_txt_button_pg" class="es_textbox_button es_submit_button bottom-app col-lg-4 col-md-4 col-sm-6 wow animate-box fadeInUp animated-fast" data-animate-effect="fadeIn" data-wow-duration="1.3s"  value="SUSCRIBE" placeholder="Suscribir" name="es_txt_button_pg" value="'.__( 'Subscribe', ES_TDOMAIN ).'">';
-		$es .= '</div>';
+		
+		
+			$es .= '<div class="es_button col-md-6 col-lg-6" >';
+				$es .= '<input type="submit" id="es_txt_button_pg" class="es_textbox_button es_submit_button bottom-app wow animate-box fadeInUp animated-fast" data-animate-effect="fadeIn" data-wow-duration="1.3s"  value="SUSCRIBE" placeholder="Suscribir" name="es_txt_button_pg" value="'.__( 'Subscribe', ES_TDOMAIN ).'">';
+			$es .= '</div>';
+		
+
 		$es .= '<div class="es_msg" id="es_shortcode_msg"><span id="es_msg_pg"></span></div>';
 		if( $es_name != "YES" ) {
 			$es .= '<input type="hidden" id="es_txt_name_pg" name="es_txt_name_pg" value="">';
@@ -53,8 +49,8 @@ class es_cls_widget {
 		$es .= '<input type="hidden" id="es_txt_group_pg" name="es_txt_group_pg" value="'.$es_group.'">';
 		$es .= wp_nonce_field( 'es-subscribe', 'es-subscribe', true, false );
 
-		$es .= '</form>';
 		$es .= '</div>';
+		$es .= '</form>';
 		return $es;
 	}
 }
