@@ -71,13 +71,15 @@ article img{
 
  
  .bottom-app{
- 	margin-top: 10px;
  	color: white;
  	background-color: #FBB448;
  	border-radius: 4px;
- 	padding: 9px;
+ 	padding: 7px;
  	border: none;
 
+ }
+ .btn-reserva{
+	 margin-top: 10px;
  }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -90,25 +92,48 @@ article img{
 
 }
 .nav-app span{
-	border: 2px solid white;
+	margin-top: -10px;
+} 
+.btn-primary {
+	background: transparent;
+	border: 2px solid white !important;
 	font-weight: 899;
 	padding: 8px 18px;
 	border-radius: 3px;
+	margin-top: -10px;
 }
-.nav-app span:hover{
-	background-color: white;
+.btn-primary:hover {
+    background-color: white;
 	color: #FBB448;
 	transition-duration: .3s;
-} 
+}
+.btn-primary:focus, .btn-primary.focus {
+	box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0); 
+}
 
 .navbar ul li.active > a {
     color: #FBB448 !important;
+}
+.modal-footer {
+	border: none;
+}
+.modal-dialog{
+	float: right;
+	margin-top: 110px;
+}
+
+.close{
+	color:white;
 }
 .icom{
 	color: white;
 	font-size: 30px !important;
 }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.background-app{
+	height: 100vh;
+}
+
 .portada{
 	display: flex;
     align-items: center;
@@ -139,6 +164,9 @@ article img{
     margin-top: 60px;
 
 }
+.reserva-modal{
+	background-color: rgba(0,0,0,0.9);
+}
 
 .form-reserva{
 	background-color: rgba(0,0,0,0.5);
@@ -161,36 +189,28 @@ article img{
    	color: gray;
 }
 .platillos .container a{
-		text-decoration-line: none;
+	text-decoration-line: none;
 }
 .separador h3{
 	font-family: "Kaushan Script", cursive !important;
 	font-size: 30px;
 	color: #FBB448;
+	padding-bottom: 20px;
+	margin-top: 1px;
 }
+
 .separador h4{
 	color: #FBB448 !important;
 	position: relative;
 	z-index: 1;
+	padding-top: 20px;
 	
 }
 .img-app{
 	position: relative;
-    z-index: -1;
+	z-index: -1;	
 }
-.separador:before{
-	content: "";
-	position: absolute;
-    top: 219px;
-    right: 0;
-    left: 0;
-    width: 95%;
-    margin-left: 15px;
-        height: 200px;
-    z-index: -1;
-    background: white;
-    transform: rotate(4deg) skew(4deg);
-}
+
 .titulo-menu{
 	margin: auto;
 
@@ -198,10 +218,16 @@ article img{
 .articulo-app h1{
 	font-size: 30px;
 }
-/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-.background-app{
-	height: 94vh;
+.contenedor:hover{
+	transform: translateY(-12px)
+			   translateX(-12px);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.18);
+	transition: 0.4s;
+	opacity: .8;
+	
 }
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 
 .service{
 	 padding: 90px 0;
@@ -424,7 +450,7 @@ article img{
 	height: 50px;
 	margin-right: 4px;
 	margin-bottom: 11px;
-	width: 500px;
+	width: 100%;
 	padding-left: 17px;
 	font-size: 18px;
 	border-radius: 2px;
@@ -441,7 +467,8 @@ article img{
 
 
 textarea{
-	width: 502px;
+	width: 100%;
+	height: 100%;
 	padding-left: 17px;
 	font-size: 18px;
 	box-shadow: none;
@@ -469,22 +496,31 @@ textarea{
 
 .ir-arriba {
 	border-radius: 4px;
-display:none;
+	display:none;
 	padding: 12px 17px;
-background-color: rgba(0,0,0,0.5);
-font-size:20px;
-cursor:pointer;
-position: fixed;
-bottom:20px;
-right:20px;
+	background-color: rgba(0,0,0,0.5);
+	font-size:20px;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
 }
 
 .ir-arriba a{
-color: white;
+	color: white;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-@media (min-width: 0px) and (max-width: 425px){
+/*Responsive moviles*/
+@media (min-width: 0px) and (max-width: 767px){
+	.modal-dialog{
+		float: none;
+	}
+	.nav-logo{
+		width: 131px;
+	}
+	.modal-header{
+		border: none;
+	}
 	.background-app{
 		background-image: url(../img/comida.jpg);
 		background-size: cover;
@@ -501,12 +537,20 @@ color: white;
 		margin: auto;
 }
 	.titulo-portada-1{
-		height: 60px;
+		height: 50px;
+	}
+	.reserva-home{
+		display: none;
 	}
 
 	.reserva{
-		padding: 30px 45px;
-		    margin-top: 0px;
+		height: 356px;
+		padding: 15px 35px;
+		margin-top: 190px;
+	}
+
+	.reserva-modal{
+		padding: 33px  24px
 	}
 
 	.estadisticas h2{
@@ -536,15 +580,15 @@ color: white;
     strong {
      	font-size: 50px;
 
-}
+	}
 
 	textarea{
-		    width: 100%;
+		width: 100%;
 	}
 
 
 	#name, #email{
-		    width: 100%;
+	    width: 100%;
 	}
 
 	.num-app{
@@ -556,20 +600,7 @@ color: white;
 		font-size: 40px; 
 	}
 
-	.separador:before{
-	content: "";
-	position: absolute;
-    top: 159px;
-    right: 0;
-    left: 0;
-    width: 95%;
-    margin-left: 15px;
-    height: 200px;
-    z-index: -1;
-    background: white;
-    transform: rotate(4deg) skew(4deg);
-}
-.form-contact{
+   .form-contact{
 	margin: auto;
 }
 
@@ -600,47 +631,37 @@ color: white;
    .titulo-service h4,p{
    	padding: 0 20px;
    }
-
 }
 
 
-
-
-
-
-
-
-
-
-
-@media (min-width: 426px) and (max-width: 1024px){
-	.video_background{
-		height: 149vh;
-	}
-	.titulo-portada h1{
-		font-size: 20px;
-		margin: auto;
-}	
-.titulo-portada-1{
-		height: 149px;
-	}
-	.titulo-portada-1 h1{
-		    text-align: center;
-		    font-size: 49px;
+@media (min-width: 768px) and (max-width: 991px){
+	.modal-dialog{
+		float: none;
+		width: 355px;
 	}
 
-	.reserva{
-		margin-top: 35px;
-		height: 400px;
+	.icom-tablet{
+		display: none;
 	}
-	.nav-app{
-		    height: 60px;
+	.portada{
+		justify-content: unset;
 	}
-
-	.reserva legend{
+	.titulo-portada-1{
 		text-align: center;
+		margin-top: 75px;
 	}
-
-
+	.reserva{
+		margin-left: 30px;
+		width: 300px;
+   }
+   .modal-header{
+	font-size: 14px;
+	border: none;
 }
-
+.num-app h4{
+	margin-top: 71px;
+}
+.estadi-app {
+	padding-bottom: 70px;
+}
+}
