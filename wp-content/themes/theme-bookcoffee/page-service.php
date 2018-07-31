@@ -8,10 +8,9 @@
 				<div class="text-center  titulo-portada titulo-portada-1 wow fadeInUp">
 					<h1><strong>It's our pleasure to serve!</strong></h1>	
 			  	</div>
-			  
-		</div>
+		    </div>
 
-	</section>
+</section>
 <!--  PORTADA /-->
 
 <!--  SERVICIOS-->

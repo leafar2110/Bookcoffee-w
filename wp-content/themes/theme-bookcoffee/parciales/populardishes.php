@@ -15,7 +15,7 @@
 				<?php $the_query = new WP_Query( $args );?>
 				<?php if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 				
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6">
 				  <a href=" <?php echo bloginfo('url').'/index.php/description'; ?>">
 					<div class="contenedor" >
 						<div class="article-app item e1">
