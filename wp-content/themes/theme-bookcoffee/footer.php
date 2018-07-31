@@ -15,7 +15,7 @@
 					</div>
 					<div class="get-social gtco-social-icon text-center contacts">
 						<h3> GET SOCIAL</h3>
-						<ul>
+						<ul class="text-justify ">
                             <li><a href="#"><i class="fa fa-twitter iconos-app"></i></a></li>
 							<li><a href="#"><i class="fa fa-facebook-official iconos-app"></i></a></li>
 							<li><a href="#"><i class="fa fa-instagram iconos-app"></i></a></li>

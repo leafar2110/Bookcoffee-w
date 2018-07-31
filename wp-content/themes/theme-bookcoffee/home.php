@@ -10,7 +10,7 @@
 					<h1><span> Bookcoffee</span> Restaurant </h1>
 			  </div>
 			  <div class="col-sm-6 col-md-4">
-			  	<form class="reserva wow fadeInRightBig">
+			  	<form class="reserva reserva-home wow fadeInRightBig">
 			  		<legend>Table reservation</legend>
 			  		<label>Personas</label>
 			  		<select type="text" class="form-control form-reserva personas" name="persona">
@@ -25,7 +25,7 @@
 			  		<input type="date" class="form-control form-reserva" name="fecha">
 			  		<label>Time</label>
 			  		<input type="time" class="form-control form-reserva" name="hora">
-			  		<input type="submit" class="bottom-app" value="Reserve now" name="hora">
+			  		<input type="submit" class="bottom-app btn-reserva" value="Reserve now" name="hora">
 			  	</form>
 			  </div>
 			</div>

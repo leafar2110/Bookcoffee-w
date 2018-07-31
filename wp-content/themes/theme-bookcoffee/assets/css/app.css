@@ -74,9 +74,12 @@ article img{
  	color: white;
  	background-color: #FBB448;
  	border-radius: 4px;
- 	padding: 9px;
+ 	padding: 7px;
  	border: none;
 
+ }
+ .btn-reserva{
+	 margin-top: 10px;
  }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -163,9 +166,6 @@ article img{
 }
 .reserva-modal{
 	background-color: rgba(0,0,0,0.9);
-}
-.modal-content{
-	width: max-content;
 }
 
 .form-reserva{
@@ -510,8 +510,14 @@ textarea{
 	color: white;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-@media (min-width: 0px) and (max-width: 425px){
+/*Responsive moviles*/
+@media (min-width: 0px) and (max-width: 767px){
+	.modal-dialog{
+		float: none;
+	}
+	.nav-logo{
+		width: 131px;
+	}
 	.modal-header{
 		border: none;
 	}
@@ -531,12 +537,16 @@ textarea{
 		margin: auto;
 }
 	.titulo-portada-1{
-		height: 60px;
+		height: 50px;
+	}
+	.reserva-home{
+		display: none;
 	}
 
 	.reserva{
-		padding: 30px 45px;
-		    margin-top: 0px;
+		height: 356px;
+		padding: 15px 35px;
+		margin-top: 190px;
 	}
 
 	.reserva-modal{
@@ -570,7 +580,7 @@ textarea{
     strong {
      	font-size: 50px;
 
-}
+	}
 
 	textarea{
 		width: 100%;
@@ -621,84 +631,37 @@ textarea{
    .titulo-service h4,p{
    	padding: 0 20px;
    }
-
 }
 
 
+@media (min-width: 768px) and (max-width: 991px){
+	.modal-dialog{
+		float: none;
+		width: 355px;
+	}
 
-@media (min-width: 426px) and (max-width: 768px){
-	.modal-header{
-		border: none;
-		font-size: 14px;
-	}
-	.video_background{
-		height: 149vh;
-	}
-	.titulo-portada h1{
-		font-size: 20px;
-		margin: auto;
-}	
-	.titulo-portada-1{
-		height: 149px;
-	}
-	.titulo-portada-1 h1{
-		text-align: center;
-	    font-size: 49px;
-	}
-	.titulo-portada {
-		margin-top: 100px;
+	.icom-tablet{
+		display: none;
 	}
 	.portada{
-		display:flex;
-		justify-content: center;
+		justify-content: unset;
 	}
-	.reserva{
- 		margin-top: 0px;
-		 height: 350px;
-    	width: 270px;
-	}
-	
-	.reserva legend{
-		text-align: center;
-	}
-
-
-}
-@media (min-width: 769px) and (max-width: 1024px){
-	.modal-header{
-		font-size: 14px;
-		border: none;
-	}
-	.video_background{
-		height: 149vh;
-	}
-	.titulo-portada h1{
-		font-size: 20px;
-		margin: auto;
-}	
 	.titulo-portada-1{
-		height: 149px;
-	}
-	.titulo-portada-1 h1{
 		text-align: center;
-	    font-size: 49px;
-	}
-	.titulo-portada {
-		margin-top: 100px;
-	}
-	.portada{
-		display:flex;
-		justify-content: center;
+		margin-top: 75px;
 	}
 	.reserva{
- 		margin-top: 0px;
-		 height: 350px;
-    	width: 270px;
-	}
-	
-	.reserva legend{
-		text-align: center;
-	}
+		margin-left: 30px;
+		width: 300px;
+   }
+   .modal-header{
+	font-size: 14px;
+	border: none;
 }
-
-
+.num-app h4{
+	margin-top: 71px;
+}
+.estadi-app {
+	padding-bottom: 70px;
+}
+}
