@@ -4,7 +4,7 @@
 <div class="d-none d-sm-block">
 	<span>hola</span>
 		  	<video autoplay="autoplay" loop="loop" id="video_background" height="51vh" class="portada_background" preload="auto" volume="0"/>
-      		<source src="<?php echo get_template_directory_uri();?>/assets/video/background.mp4" srcset="<?php echo get_template_directory_uri();?>/assets/img/espreso.jpg" type="video/mp4" />	
+      		<source src="<?php echo get_template_directory_uri();?><?php the_field('video'); ?>" type="video/mp4" />	
 </div>
 
 <div class="d-sm-none">
