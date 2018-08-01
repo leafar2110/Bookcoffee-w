@@ -506,7 +506,7 @@
 .rtb-admin-modal input[type="email"],
 .rtb-admin-modal input[type="tel"],
 .rtb-admin-modal textarea {
-	max-width: 100%;
+	max-width: 5em;
 	width: 100%;
 }
 

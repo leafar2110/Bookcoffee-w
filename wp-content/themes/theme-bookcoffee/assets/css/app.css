@@ -77,7 +77,9 @@ article img{
  	background-color: #FBB448;
  	border-radius: 4px;
  	padding: 7px;
- 	border: none;
+	 border: none;
+	 order: 3 !important;
+	 
 	
  }
  .btn-reserva{
@@ -176,20 +178,44 @@ article img{
 	padding: 6px ;
 	
 	color: white;
+	
 
 
 }
+ #rtb-date, #rtb-time{
+
+	max-width: 4em;
+
+	
+}
+.rtb-text .form-reserva .date{
+	float: left;
+}
+.rtb-text .form-reserva .time{
+	float:right;
+}
+.rtb-booking-form form{
+	display:flex;
+	flex-direction: column;
+
+}
+.contact{
+	order: 1 !important;
+}
+
 .rtb-booking-form select{
 	background-color: rgba(0,0,0,0.5) !important;
 	border-radius: 4px;
 	padding: 6px ;
-	color: white;
-
-
-	
+	color: white;	
 }
-
-
+.reservation{
+	order: 2 !important;
+}
+.form-reserva .date{
+	display: inline-block;
+	float:right;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 .platillos{
 	text-align: center;
@@ -586,6 +612,7 @@ textarea{
 		padding: 15px 35px;
 		margin-top: 190px;
 	}
+
 
 	.reserva-modal{
 		padding: 33px  24px
