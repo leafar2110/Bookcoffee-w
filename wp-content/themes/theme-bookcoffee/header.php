@@ -28,7 +28,7 @@
 							<li class="nav-item"><a class="nav-link" href="<?php echo bloginfo('url').'/index.php/menu'; ?>">Menu</a></li>
 							<li class="nav-item"><a class="nav-link" href="<?php echo bloginfo('url').'/index.php/service'; ?>">Service</a></li>
 							<li class="nav-item"><a class="nav-link" href="<?php echo bloginfo('url').'/index.php/contact'; ?>">Contact</a></li>
-							<li class="nav-item"><a class="nav-link" href="#"><span><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Reservation</button></span></a></li>
+							<li class="nav-item"><a class="nav-link" href="#"><span><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >Reservation</button></span></a></li>
 					    </ul>
 				  </div>
 				</div>
