@@ -46,27 +46,11 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
-        <label>Personas</label>
-			  		<select type="text" class="form-control form-reserva personas" name="persona">
-			  			<option value="">Persons</option>
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-							<option value="">5+</option>
-			  		</select> 
-			  		<label>Date</label>
-			  		<input type="date" class="form-control form-reserva" name="fecha">
-			  		<label>Time</label>
-			  		<input type="time" class="form-control form-reserva" name="hora">
-			  		
-        </form>
+			<?php (dynamic_sidebar('reservas'));?>
+				
+				
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class=" bottom-app">Send message</button>
-      </div>
+   
     </div>
   </div>
 </div>

@@ -1,3 +1,4 @@
+
 <?php
 //*****************************************************css y js**********************************************************************
 function adp_load_styles_scripts() {
@@ -16,4 +17,20 @@ function adp_load_styles_scripts() {
 }
 add_action('wp_enqueue_scripts', 'adp_load_styles_scripts');
 add_theme_support( 'post-thumbnails' );
+ 
+//* Widget *//
+if (function_exists('register_sidebar')){
+   register_sidebar(array (
+   'name' => 'reservas',
+   'id' => 'reserva',
+   'descripcion' => 'Incluir en header',
+   'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+   'after_widget' => '</aside>',
+   'before_title' =>'<h3>',
+   'after_title' => '</h3>',
+   ));
+ };
+
+
+
 ?>
