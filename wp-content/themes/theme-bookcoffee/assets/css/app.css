@@ -229,9 +229,18 @@ article img{
 	z-index: -1;	
 }
 
-.titulo-menu{
+.titulo-menu h1{
+	padding-bottom: 50px;
+	text-align: center;
 	margin: auto;
+	font-family: "Kaushan Script", cursive !important;
+	font-size: 50px;
+	color: #FBB448;
+	margin-bottom: 27px;
 
+}
+.description{
+	padding: 100px 0;
 }
 .articulo-app h1{
 	font-size: 30px;
