@@ -2,7 +2,19 @@ body{
 	font-family: "Lato", Arial, sans-serif;
 	color: #777;
 }
+.rtb-booking-form fieldset>div:first-child {
+    float: left;
+}
+.rtb-booking-form fieldset>div {
+     margin-top: 0 !important;
+}
+.reservation .time{
+	float:  right;
+}
+#rtb-party{
 
+	margin-left: 21px;
+}
 @font-face {
 	font-family: 'Kaushan Script';
 	src: url('../fonts/KaushanScript-Regular.ttf');
@@ -296,7 +308,7 @@ article img{
 	text-align: center;
 	background-color: #FBB448; 
 }
-.service h1{
+.service h1{Popular Dishes
 	font-family: "Kaushan Script", cursive !important;
 	font-size: 50px;
 }

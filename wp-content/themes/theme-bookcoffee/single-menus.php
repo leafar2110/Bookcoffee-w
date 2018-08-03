@@ -20,8 +20,8 @@
     
     <section class="platillos">
         <div class="titulo-menu">
-                <h1>Popular Dishes</h1>
-                <p><?php the_excerpt();        ?></p>
+                <h2>Popular Dishes</h2>
+               <h4> <?php the_excerpt(); ?> </h4>
         </div>    
     </section>
 
