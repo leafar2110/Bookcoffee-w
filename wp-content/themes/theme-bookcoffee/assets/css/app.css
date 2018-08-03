@@ -191,6 +191,7 @@ article img{
 .reserva{
 	border-top: 8px solid  #FBB448;
 	padding: 5px 30px;
+	
 	color: white;
 	background-color: rgba(0,0,0,0.6);
 	display: flex;
@@ -660,12 +661,12 @@ textarea{
 	}
 
 	.reserva{
-		padding: 15px 35px;
+		padding: 5px 30px;
 	}
 
 
 	.reserva-modal{
-		padding: 33px  24px
+		padding: 5px 30px;
 	}
 
 	.estadisticas h2{
@@ -760,6 +761,11 @@ textarea{
 
 	.icom-tablet{
 		display: none;
+		border:none;
+	
+	}
+	#hola:focus{
+		border-color: rgba(0, 0, 0, 0.1);
 	}
 	.portada{
 		justify-content: unset;
