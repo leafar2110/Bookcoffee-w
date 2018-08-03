@@ -3,6 +3,17 @@ body{
 	color: #777;
 }
 
+@font-face {
+	font-family: 'Kaushan Script';
+	src: url('../fonts/KaushanScript-Regular.ttf');
+	src: local('☺'),
+	/*	url('../fonts/Raleway-Bold.woff') format('woff'),
+	url('../fonts/Raleway-Bold.ttf') format('truetype'),
+	url('../fonts/Raleway-Bold.svg') format('svg');*/
+	font-weight: normal;
+	font-style: normal;
+	}
+
 .titulo-app span{
 	border-bottom: 3px solid white;
 }
@@ -20,7 +31,7 @@ article img{
 }
 
 
-.video_background { 
+.portada_background { 
 	position: absolute; 
 	bottom: 0px; 
 	right: 0px; 
@@ -30,6 +41,14 @@ article img{
 	height: auto; 
 	z-index: -1000; 
 	overflow: hidden; 
+}
+.img_background{
+	position: absolute; 
+	top: 0;
+	z-index: -1000; 
+	height: 90vh;
+	overflow: hidden; 
+	background: cover;
 }
 .video_pattern { 
 	background:#fff; 
@@ -156,7 +175,6 @@ article img{
 	border-top: 8px solid  #FBB448;
 	padding: 29px;
 	color: white;
-	height: 411px;
 	background-color: rgba(0,0,0,0.6);
 	display: flex;
     justify-content: space-around;
@@ -211,9 +229,18 @@ article img{
 	z-index: -1;	
 }
 
-.titulo-menu{
+.titulo-menu h1{
+	padding-bottom: 50px;
+	text-align: center;
 	margin: auto;
+	font-family: "Kaushan Script", cursive !important;
+	font-size: 50px;
+	color: #FBB448;
+	margin-bottom: 27px;
 
+}
+.description{
+	padding: 100px 0;
 }
 .articulo-app h1{
 	font-size: 30px;
@@ -522,7 +549,6 @@ textarea{
 		border: none;
 	}
 	.background-app{
-		background-image: url(../img/comida.jpg);
 		background-size: cover;
 	}
 	.titulo-portada {
@@ -533,11 +559,11 @@ textarea{
 		font-size: 30px;
 	}
 	.titulo-portada-1 h1{
-		font-size: 30px;
+		font-size: 32px;
 		margin: auto;
 }
 	.titulo-portada-1{
-		height: 50px;
+		height: 100px;
 	}
 	.reserva-home{
 		display: none;
@@ -546,7 +572,6 @@ textarea{
 	.reserva{
 		height: 356px;
 		padding: 15px 35px;
-		margin-top: 190px;
 	}
 
 	.reserva-modal{
@@ -634,7 +659,10 @@ textarea{
 }
 
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
+	.reserva{
+		margin-top: 10px;
+	}
 	.modal-dialog{
 		float: none;
 		width: 355px;
@@ -664,4 +692,11 @@ textarea{
 .estadi-app {
 	padding-bottom: 70px;
 }
+}
+
+
+@media (min-width: 992px) and (max-width: 1024px){
+	.reserva{
+		margin-top: 10px;
+	}
 }
