@@ -187,13 +187,13 @@ article img{
 
 .reserva{
 	border-top: 8px solid  #FBB448;
-	padding: 29px;
+	padding: 5px 30px;
 	color: white;
 	background-color: rgba(0,0,0,0.6);
 	display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 0px;
 
 }
 .reserva-modal{
