@@ -6,19 +6,19 @@
 		</div>
 
 		<div class="row num-app">
-				<div class="col-lg-3 col-md-6 col-sm-12 std-app " >
+				<div class="col-lg-3 col-md-6 col-sm-12" >
 					<h2>21</h2>
 					<h4>AVG. RATING</h4>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12 std-app">
+				<div class="col-lg-3 col-md-6 col-sm-12">
 					<h2>21</h2>
 					<h4>FOOD TYPES</h4>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12 std-app">
+				<div class="col-lg-3 col-md-6 col-sm-12">
 					<h2>21</h2>
 					<h4>CHEF COOK</h4>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12 std-app">
+				<div class="col-lg-3 col-md-6 col-sm-12">
 					<h2>21</h2>
 					<h4>YEAR STARTED</h4>
 				</div>

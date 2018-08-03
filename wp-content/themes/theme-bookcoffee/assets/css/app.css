@@ -26,7 +26,7 @@ body{
 	font-style: normal;
 	}
 
-.titulo-app span{
+	.titulo-app span{
 	border-bottom: 3px solid white;
 }
 strong{
@@ -55,12 +55,14 @@ article img{
 	overflow: hidden; 
 }
 .img_background{
+	width: -webkit-fill-available;
+	width: -moz-fill-available;
 	position: absolute; 
 	top: 0;
 	z-index: -1000; 
 	height: 90vh;
 	overflow: hidden; 
-	background: cover;
+	background-size: cover;
 }
 .video_pattern { 
 	background:#fff; 
@@ -140,8 +142,9 @@ article img{
 	color: #FBB448;
 	transition-duration: .3s;
 }
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus, .btn-primary.focus, .icom-tablet:focus {
 	box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0); 
+	border: none !important;
 }
 
 .navbar ul li.active > a {
@@ -284,9 +287,18 @@ article img{
 	z-index: -1;	
 }
 
-.titulo-menu{
+.titulo-menu h1{
+	padding-bottom: 50px;
+	text-align: center;
 	margin: auto;
+	font-family: "Kaushan Script", cursive !important;
+	font-size: 50px;
+	color: #FBB448;
+	margin-bottom: 27px;
 
+}
+.description{
+	padding: 100px 0;
 }
 .articulo-app h1{
 	font-size: 30px;
@@ -603,7 +615,20 @@ textarea{
 }
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*Responsive moviles*/
+@media (min-width: 0px) and (max-width: 360px){
+	.icom-tablet{
+		padding-left: 50px !important;
+	}
+	
+}
+@media (min-width: 361px) and (max-width: 500px){
+	.icom-tablet{
+		padding-left: 100px !important;
+	}
+	
+}
 @media (min-width: 0px) and (max-width: 767px){
+	
 	.modal-dialog{
 		float: none;
 	}
@@ -626,7 +651,7 @@ textarea{
 	.titulo-portada-1 h1{
 		font-size: 32px;
 		margin: auto;
-}
+    }
 	.titulo-portada-1{
 		height: 100px;
 	}
@@ -635,7 +660,6 @@ textarea{
 	}
 
 	.reserva{
-		height: 356px;
 		padding: 15px 35px;
 	}
 
@@ -752,7 +776,7 @@ textarea{
 	font-size: 14px;
 	border: none;
 }
-.num-app h4{
+.num-app h2{
 	margin-top: 71px;
 }
 .estadi-app {

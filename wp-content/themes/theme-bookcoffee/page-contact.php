@@ -10,7 +10,7 @@
 </div>
 
 <div class="d-sm-none">
-	<img src="<?php echo get_template_directory_uri();?>/assets/img/comida.jpg" alt="platillos" class="img_background">
+	<img src="<?php echo get_template_directory_uri();?>/assets/img/comida.jpg" alt="platillos" class="img_background img-fluid">
 </div>
 		<div class="container">
 			<div class="portada-1">

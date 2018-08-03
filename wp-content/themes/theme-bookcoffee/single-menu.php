@@ -8,7 +8,7 @@
 </div>
 
 <div class="d-sm-none">
-	<img src="<?php echo get_template_directory_uri();?>/assets/img/comida.jpg" alt="platillos" class="img_background">
+	<img src="<?php echo get_template_directory_uri();?>/assets/img/comida.jpg" alt="platillos" class="img_background img-fluid">
 </div>
 
     <div class="portada-1">
@@ -18,11 +18,44 @@
     </div>
     </section>
     
-    <section class="platillos">
+    <section class="description container">
         <div class="titulo-menu">
                 <h1>Popular Dishes</h1>
-                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.</p>
-        </div>    
+        </div>  
+        <div class="row">
+            <div class="col-12 col-md-8 ">
+                <img src="<?php echo get_template_directory_uri();?>/assets/img/espresso.jpg" alt="" class="img-fluid">
+                <h3>populardishes</h3>
+                <p class="text-justify"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis inventore 
+                enim dicta molestias perferendis natus consequuntur nam accusantium suscipit itaque, beatae, maiores 
+                ipsa, nobis ad dolores debitis voluptate nihil ratione quam adipisci dolorum quibusdam. Quis dolore
+                 voluptatibus vel id optio obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rerum 
+                 ipsam, repudiandae ad ullam aliquid eos quaerat ducimus enim iure optio possimus quos maiores, delectus 
+                 accusamus velit atque ab dicta!</p>
+                </div>
+                
+            <div class="col-12 col-sm-4"> 
+            <p class="text-justify"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis inventore 
+                enim dicta molestias perferendis natus consequuntur nam accusantium suscipit itaque, beatae, maiores 
+                ipsa, nobis ad dolores debitis voluptate nihil ratione quam adipisci dolorum quibusdam. Quis dolore
+                 voluptatibus vel id optio obcaecati.</p>
+                 <p class="text-justify"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis inventore 
+                enim dicta molestias perferendis natus consequuntur nam accusantium suscipit itaque, beatae, maiores 
+                ipsa, nobis ad dolores debitis voluptate nihil ratione quam adipisci dolorum quibusdam. Quis dolore
+                 voluptatibus vel id optio obcaecati.</p>
+                 <p class="text-justify"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis inventore 
+                enim dicta molestias perferendis natus consequuntur nam accusantium suscipit itaque, beatae, maiores 
+                ipsa, nobis ad dolores debitis voluptate nihil ratione quam adipisci dolorum quibusdam. Quis dolore
+                 voluptatibus vel id optio obcaecati.</p>
+
+            </div>
+
+            
+        
+        
+        </div>
+
+
     </section>
 
 
